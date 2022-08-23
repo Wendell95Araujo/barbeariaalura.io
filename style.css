@@ -121,7 +121,7 @@ form label, form legend {
 }
 
 .enviar {
-	width:40%;
+	width:480px;
 	padding: 15px 0;
 	background: orange;
 	color: white;
@@ -293,7 +293,14 @@ td, th {
 
 	.produtos img {
 		width: 80%;
+	}	
+
+	.input-padrao {
+		width:80%;
 	}
+
+	.enviar {
+		width:80%;
 }
 
 /*Acessando pelo celular*/
@@ -312,7 +319,7 @@ td, th {
 		position: static;
 	}
 
-	.lista-beneficios, .imagem-beneficios {
+	.lista-beneficios, .imagem-beneficios, .enviar {
 		width: 100%;
 	}
 
