@@ -49,7 +49,7 @@ nav a:hover {
 	width: 30%;
 	vertical-align: top;
 	margin: 0 1.5%;
-	padding: 30px 20px;
+	padding: 30px 10px;
 	box-sizing: border-box;
 	border: 2px solid #000000;
 	border-radius: 10px;
@@ -256,7 +256,7 @@ td, th {
 }
 
 @media screen and (max-width: 480px) {
-	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos {
 		width: auto;
 		padding: 10px;
 	}
@@ -273,4 +273,19 @@ td, th {
 		width: 100%;
 	}
 
+	.produtos li {
+		display: block;
+		text-align: center;
+		width: 70%;
+		margin: 20px auto;
+		padding: 20px 10px;
+	}
+
+	.produtos li:hover h2 {
+		font-size: 32px;
+	}
+
+	.produtos img {
+		width: 80%;
+	}
 }
