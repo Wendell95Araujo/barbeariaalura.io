@@ -255,6 +255,49 @@ td, th {
 	margin: 2em auto;
 }
 
+/*Acessando em resolução menor*/
+
+@media screen and (max-width: 940px) {
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos {
+		width: auto;
+		padding: 30px;
+	}
+
+	.caixa {
+		text-align: center;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+
+	.lista-beneficios, .imagem-beneficios {
+		width: 100%;
+	}
+
+	.produtos li {
+		display: block;
+		text-align: center;
+		width: 70%;
+		margin: 20px auto;
+		padding: 20px 10px;
+	}
+
+	.produtos li:hover h2 {
+		font-size: 32px;
+	}
+
+	.produtos img {
+		width: 80%;
+	}
+}
+
+/*Acessando pelo celular*/
+
 @media screen and (max-width: 480px) {
 	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos {
 		width: auto;
