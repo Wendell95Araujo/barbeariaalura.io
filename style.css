@@ -100,12 +100,18 @@ main {
 
 form {
 	margin: 40px 0;
+	padding: 0 50px
 }
 
 form label, form legend {
 	display:block;
 	font-size: 20px;
 	margin: 0 0 10px;
+	padding: 0 50px
+}
+
+.hora-escolha {
+	margin: 0 50px 0;
 }
 
 .input-padrao {
@@ -139,6 +145,10 @@ form label, form legend {
 
 table {
 	margin: 20px 0 40px;
+}
+
+.tabela-hora {
+	margin: 50px
 }
 
 thead {
@@ -192,7 +202,7 @@ td, th {
 
 .mapa {
 	padding: 3em 0;
-	background: linear-gradient(#FEFEFE,#888888);
+	background: linear-gradient(#FEFEFE, #888888);
 }
 
 .mapa-conteudo {
@@ -227,10 +237,6 @@ td, th {
 
 .itens:first-child {
 	font-weight: bold;
-}
-
-.itens:before {
-	content: "🟊";
 }
 
 .imagem-beneficios {
