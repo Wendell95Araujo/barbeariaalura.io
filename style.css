@@ -3,268 +3,247 @@ body {
 }
 
 header {
-	background: #BBBBBB;
-	padding: 20px 0;
+	background: #5B3C88;
+	padding: 8px 0;
 }
 
 .caixa {
 	position: relative;
-	width: 940px;
+	width: 900px;
 	margin: 0 auto;
+	padding: 1px;
+	text-align: center;
+}
+
+.logo-header {
+	height: 149px;
+	margin: 0 0 5px 0;
 }
 
 nav {
-	position: absolute;
-	top: 110px;
-	right: 0;
+	position: relative;
+	
 }
 
 nav li {
 	display: inline;
-	margin: 0 0 0 15px;
+	margin: 0 7.5px;
 }
 
 nav a {
 	text-transform: uppercase;
-	color: #000000;
 	font-weight: bold;
-	font-size: 22px;
+	font-size: 20px;
 	text-decoration: none;
+	color: #FFFFFF;
 }
 
 nav a:hover {
-	color: #C78C19;
-	text-decoration: underline;
+	color: #C0ADDB;
 }
 
-.produtos {
-	width: 940px;
-	margin: 0 auto;
-	padding: 50px 0;
+.logo-home {
+	height: 20px;
+	width: 25px;
+	filter: brightness(100);
 }
 
-.produtos li {
-	display: inline-block;
-	text-align: center;
-	width: 30%;
-	vertical-align: top;
-	margin: 0 1.5%;
-	padding: 30px 10px;
-	box-sizing: border-box;
-	border: 2px solid #000000;
-	border-radius: 10px;
-}
-
-.produtos li:hover {
-	border-color: #C78C19;
-}
-
-.produtos li:active {
-	border-color: #088C19;	
-}
-
-.produtos li:hover h2 {
-	font-size: 34px;
-}
-
-.produtos h2 {
-	font-size: 30px;
-	font-weight: bold;
-}
-
-.produto-descricao {
-	font-size: 18px;
-}
-
-.produto-preco {
-	font-size: 22px;
-	font-weight: bold;
-	margin-top: 10px;
-}
-
-footer {
-	text-align: center;
-	background: url("bg.jpg");
-	padding: 40px 0;
-}
-
-.copyright {
-	color: #FFFFFF;
-	font-size: 13px;
-	margin: 20px 0 0;
-}
-
-main {
-	
-}
-
-form {
-	margin: 40px 0;
-	padding: 0 50px
-}
-
-form label, form legend {
-	display:block;
-	font-size: 20px;
-	margin: 0 0 10px;
-}
-
-.input-padrao {
-	display: block;
-	margin: 0 0 20px;
-	padding: 10px 25px;
-	width: 50%;
-}
-
-.checkbox {
-	margin: 20px 0;
-}
-
-.enviar {
-	width:480px;
-	padding: 15px 0;
-	background: orange;
-	color: white;
-	font-weight: bold;
-	font-size: 18px;
-	border: none;
-	border-radius: 5px;
-	transition: 1s all;
-	cursor: pointer;
-}
-
-.enviar:hover {
-	background: darkorange;
-	transform: scale(1.2);
-}
-
-table {
-	margin: 20px 0 40px;
-}
-
-.tabela-hora {
-	margin: 20px 0 40px 50px
-}
-
-thead {
-	background: #555555;
-	color: white;
-	font-weight: bold;
-}
-
-td, th {
-	border: 1px solid #000000;
-	padding: 8px 15px;
-}
-
-
-/* css da página inicial */
-.banner {
-	width:100%;
-}
-
-.titulo-principal {
-	text-align: center;
-	font-weight: bold;
-	font-size: 2em;
-	margin: 0 0 1em;
-	clear: left;
-}
-
-.principal {
-	padding: 3em 0;
-	background: #FEFEFE;
-	width: 940px;
-	margin: 0 auto;
-}
-
-.principal p {
-	margin: 0 0 1em;
+.logo-home:hover {
+	filter: unset;
 }
 
 .principal strong {
 	font-weight: bold;
 }
 
-.principal em {
-	font-style: italic;
-}
-
-.utensilios {
-	width: 120px;
-	float: left;
-	margin: 0 20px 20px 0;
-}
-
-.mapa {
-	padding: 3em 0;
-	background: linear-gradient(#FEFEFE, #888888);
-}
-
-.mapa-conteudo {
-	width: 940px;
+.principal {
+	width: 80%;
 	margin: 0 auto;
 }
 
-.mapa p {
-	margin: 0 0 2em;
+.titulo-principal {
 	text-align: center;
+	font-weight: bold;
+	font-size: 2em;
+	margin: 10px 0 20px 0;
+	padding: 10px;
+	clear: left;
+	color: #5B3C88;
 }
 
-.beneficios {
-	padding: 3em 0;
-	background: #888888;
+
+.titulo-boasvindas{
+	font-weight: bold;
+	font-size: 22px;
+	margin: 20px;
 }
 
-.conteudo-beneficios {
-	width: 640px;
-	margin: 0 auto;
+.boasvindas{
+	font-style: italic;
+	margin: 10px 20px;
 }
 
-.lista-beneficios {
-	width: 40%;
-	display: inline-block;
-	vertical-align: top;
-}
-
-.itens {
-	line-height: 1.5;
-}
-
-.itens:before {
-    content: "★";
-}
-
-.itens:first-child {
+.boasvindas em {
 	font-weight: bold;
 }
 
-.imagem-beneficios {
-	width: 60%;
-	opacity: 1;
-	transition: 400ms;
-	box-shadow: 10px 10px 10px 0 #000000;
+.subtitulo-principal {
+	font-weight: bold;
+	margin: 50px 20px 5px 20px;
 }
 
-.imagem-beneficios:hover {
-	opacity: 0.3;
+.itens {
+	margin: 10px 20px;
 }
 
-.video {
-	width: 560px;
-	margin: 2em auto;
+.itens:before{
+	content: "▸";
+}
+
+.itens em {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.lista-horarios {
+	text-align: center;
+	color: #5B3C88;
+	font-weight: bold;
+	font-size: 20px;
+	margin: 10px auto;
+	width: 825px
+}
+
+.descricão-lista-horarios {
+	text-align: center;
+	font-style: italic;
+	width: 825px;
+	margin: 0 auto;
+}
+
+.descricão-lista-horarios strong {
+	font-weight: bold;
+}
+
+
+.planilha {
+	display: block;
+	position: relative;
+	margin: 30px auto;
+	width: 825px;
+	height: 1390px;
+}
+
+.formulario {
+	display: block;
+	background: #5B3C88;
+	position: relative;
+	text-align: center;
+	font-size: 16px;
+	padding: 15px ;
+	margin: 30px auto;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-weight: bold;
+	border: solid 1px;
+	border-radius: 10px;
+	box-shadow: inset 0 0 10px #FFFFFF;
+	width: 500px;
+}
+.formulario:hover {
+	cursor: pointer;
+	color: #C0ADDB;
+	box-shadow: inset 0 0 10px #C0ADDB;
+}
+
+.apk-area {
+	margin: 50px 0 20px 20px;
+	height: 50px;
+}
+
+.logo-android {
+	height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.apk-text {
+	display: inline-block;
+	color: #000000;
+	vertical-align: middle;
+}
+
+.apk-download {
+	text-decoration: none;
+	color: #5B3C88;
+	font-weight: bold;
+}
+
+.apk-download:hover {
+	color: #C0ADDB;
+}
+
+.tutorial-download {
+	text-decoration: none;
+	color: #5B3C88;
+	font-weight: bold;
+}
+
+.tutorial-download:hover {
+	color: #C0ADDB;
+}
+
+.tutorial-video {
+	text-decoration: none;
+	color: #5B3C88;
+	font-weight: bold;
+}
+
+.tutorial-video:hover {
+	color: #C0ADDB;
+}
+
+footer {
+	text-align: center;
+	background: #5B3C88;
+	margin: 20px 0 0 0;
+	padding: 20px 0;
+	width: auto;
+}
+
+.logo-footer {
+	height: 50px;
+}
+
+.Londrina {
+	color: #FFFFFF;
+	font-size: 15px;
+	margin: 15px;
 }
 
 /*Acessando em resolução menor*/
 
-@media screen and (max-width: 940px) {
-	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos {
+@media screen and (max-width: 900px) {
+	.caixa {
 		width: auto;
-		padding: 30px;
 	}
 
-	.caixa {
-		text-align: center;
+	header {
+		padding: 0 0 0 0 ;
+	}
+
+	.logo-header {
+	display: none;
+}
+	
+	.logo-home {
+		height: 25px;
+		width: 30px;
+	}
+
+	nav a {
+		display: block;
+		font-size: 18px;
 	}
 
 	h1 {
@@ -275,67 +254,39 @@ td, th {
 		position: static;
 	}
 
-	.lista-beneficios, .imagem-beneficios {
-		width: 100%;
+	.principal, .lista-horarios, .descricão-lista-horarios, .planilha {
+		width: 90%;
 	}
 
-	.produtos li {
-		display: block;
-		text-align: center;
+	.titulo-principal {
+		font-size: 22px;
+	}
+
+	.titulo-boasvindas {
+		font-size: 18px;
+	}
+
+	.formulario {
 		width: 70%;
-		margin: 20px auto;
-		padding: 20px 10px;
 	}
-
-	.produtos li:hover h2 {
-		font-size: 32px;
-	}
-
-	.produtos img {
-		width: 80%;
-	}	
-
-	.input-padrao {
-		width:80%;
-	}
-
-	.enviar {
-		width:80%;
 }
 
 /*Acessando pelo celular*/
 
 @media screen and (max-width: 480px) {
-	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos {
+	.caixa {
 		width: auto;
-		padding: 10px;
+        }
+
+    .logo-android {
+		width: 10%;
 	}
 
-	h1 {
-		text-align: center;
-	}
-
-	nav {
-		position: static;
-	}
-
-	.lista-beneficios, .imagem-beneficios, .enviar {
-		width: 100%;
-	}
-
-	.produtos li {
-		display: block;
-		text-align: center;
-		width: 70%;
-		margin: 20px auto;
-		padding: 20px 10px;
-	}
-
-	.produtos li:hover h2 {
-		font-size: 32px;
-	}
-
-	.produtos img {
+	.apk-text {
 		width: 80%;
+	}
+
+	.planilha {
+		height: 500px;
 	}
 }
