@@ -157,6 +157,10 @@ td, th {
 	padding: 8px 15px;
 }
 
+::-webkit-scrollbar {
+	display: none;
+}
+
 
 /* css da página inicial */
 .banner {
