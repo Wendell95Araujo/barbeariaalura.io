@@ -5,23 +5,34 @@
 
 <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
 
-<H2>Página barbearia alura</H2>
+<h2>🔨 Funcionalidades do projeto</h2>
 
-<h4>Site para conhecer a barbearia e agendar atendimentos</h4>
+O projeto barbearia alura é um site para conhecer a barbearia e agendar atendimentos. Foram criadas três páginas:
 
 - Página inicial com descrição sobre a barbearia
 - Página de produtos
 - Página de contato
 
+
+<h2>📁 Acesso ao projeto</h2>
+
 >Para acessar a página [clique aqui](https://wendell95araujo.github.io/barbeariaalura.io/)
 
-<h3>Técnicas e tecnologias utilizadas</h3>
+Neste repositório você tem acesso a todo o material produzido no curso.
+
+<h2>🛠️ Abrir e rodar o projeto</h2>
+
+Para abrir e rodar o projeto, basta abrir o aquivo index.html no navegador.
+
+<h2>✔️ Técnicas e tecnologias utilizadas</h2>
 
 - ``HTML5``
 - ``CSS3``
 
+<h2>📚 Mais informações do curso</h2>
+
 ```
-Criado no curso Alura HTML5 e CSS3 dividido em quatro partes
+Curso Alura HTML5 e CSS3 dividido em quatro partes
 ```
 <h3>Instrutor</h3>
 
