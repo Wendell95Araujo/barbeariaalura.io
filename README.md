@@ -13,7 +13,7 @@
 - Página de produtos
 - Página de contato
 
->Para acessar a página [cliqui aqui](https://wendell95araujo.github.io/barbeariaalura.io/)
+>Para acessar a página [clique aqui](https://wendell95araujo.github.io/barbeariaalura.io/)
 
 <h3>Técnicas e tecnologias utilizadas</h3>
 
