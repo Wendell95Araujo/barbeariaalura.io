@@ -25,18 +25,18 @@
 		</header>
 
 		<main>
-			<form class="formlularios">
+			<form class="formlularios" action="https://formspree.io/f/xyyvegln" method="POST">
 				<label for="nomesobrenome">Nome e sobrenome</label>
-				<input type="text" id="nomesobrenome" class="input-padrao" required>
+				<input type="text" name="Nome" id="nomesobrenome" class="input-padrao" required>
 
 				<label for="email">Email</label>
-				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+				<input type="email" name="e-mail" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
 
 				<label for="telefone">Telefone</label>
-				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+				<input type="tel" name="Telefone" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
 
 				<label for="mensagem">Mensagem</label>
-				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+				<textarea name="Mensagem" cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
 
 				<fieldset>
 					<legend>Como prefere o nosso contato?</legend>
@@ -49,14 +49,14 @@
 
 				<fieldset>
 					<legend>Qual horário prefere ser atendido?</legend>
-					<select class="hora-escolha">
+					<select class="hora-escolha" name="Hoário">
 						<option>Manhã</option>
 						<option>Tarde</option>
 						<option>Noite</option>
 					</select>
 				</fieldset>
 
-				<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+				<label class="checkbox"><input type="checkbox" name="Newsletter" checked>Gostaria de receber nossas novidades por email?</label>
 
 				<input type="submit" value="Enviar formulário" class="enviar">
 			</form>
