@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="style.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="script.js"></script>
 	</head>
 	<body>
 		<header>
@@ -25,7 +26,7 @@
 		</header>
 
 		<main>
-			<form class="formlularios" action="https://formspree.io/f/xyyvegln" method="POST">
+			<form class="formlularios" id="formularios" action= "javascript:enviarForm()" method="POST">
 				<label for="nomesobrenome">Nome e sobrenome</label>
 				<input type="text" name="Nome" id="nomesobrenome" class="input-padrao" required>
 
@@ -33,7 +34,7 @@
 				<input type="email" name="e-mail" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
 
 				<label for="telefone">Telefone</label>
-				<input type="tel" name="Telefone" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+				<input type="tel" maxlength="15" name="Telefone" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX" onkeyup="handlePhone(event)">
 
 				<label for="mensagem">Mensagem</label>
 				<textarea name="Mensagem" cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
@@ -58,7 +59,7 @@
 
 				<label class="checkbox"><input type="checkbox" name="Newsletter" checked>Gostaria de receber nossas novidades por email?</label>
 
-				<input type="submit" value="Enviar formulário" class="enviar">
+				<input type="submit" value="Enviar formulário" class="enviar" id="enviar">
 			</form>
 
 			<table class="tabela-hora">
