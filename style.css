@@ -233,14 +233,11 @@ td, th {
 
 .itens {
 	line-height: 1.5;
+	font-weight: bold;
 }
 
 .itens:before {
     content: "★";
-}
-
-.itens:first-child {
-	font-weight: bold;
 }
 
 .imagem-beneficios {
