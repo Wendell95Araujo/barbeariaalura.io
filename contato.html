@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="style.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script type="text/javascript" src="script.js"></script>
 	</head>
 	<body>
@@ -41,11 +42,11 @@
 
 				<fieldset>
 					<legend>Como prefere o nosso contato?</legend>
-					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
 					
-					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
 					
-					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
 				</fieldset>
 
 				<fieldset>
@@ -57,9 +58,9 @@
 					</select>
 				</fieldset>
 
-				<label class="checkbox"><input type="checkbox" name="Newsletter" checked>Gostaria de receber nossas novidades por email?</label>
+				<label class="checkbox"><input type="checkbox" name="Newsletter" id="newsletter">Gostaria de receber nossas novidades por email?</label>
 
-				<input type="submit" value="Enviar formulário" class="enviar" id="enviar">
+				<input type="submit" value="Enviar formulário" class="enviar" id="enviar" onclick="enviarForm()">
 			</form>
 
 			<table class="tabela-hora">
