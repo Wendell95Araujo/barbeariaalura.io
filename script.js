@@ -18,13 +18,24 @@ function enviarForm(){
   var formTel = "&entry.1072990755=";
   var formMessage = "&entry.1419308416=";
   var formContact = "&entry.1594901940=";
+  var formHora = "&entry.1569716263="
   var formNewsletter = "&entry.1730461247="
 
-  var respostaName = encodeURI(document.getElementById('nomesobrenome').value);
+  var completeName = document.getElementById('nomesobrenome').value;
+
+  const palavras = completeName.split(" ");
+
+  for (let i = 0; i < palavras.length; i++) {
+      palavras[i] = palavras[i][0].toUpperCase() + palavras[i].slice(1).toLowerCase();
+  }
+
+var respostaName = encodeURI(palavras.join(" "));
+
   var respostaEmail = encodeURI(document.getElementById('email').value);
   var respostaTel = encodeURI(document.getElementById('telefone').value);
-  var respostaMessage = encodeURI(document.getElementById('mensagem').value);
-  var respostaContact = $('input[type=radio]:checked')[0].value
+  var respostaMessage = encodeURI(document.getElementById('mensagem').value[0].toUpperCase() + document.getElementById('mensagem').value.slice(1).toLowerCase());
+  var respostaContact = $('input[type=radio]:checked')[0].value;
+  var respostaHora = encodeURI($('#horario').val());
   var capitalize = ""
 
   if( $('#newsletter').is(':checked') ){
@@ -34,10 +45,10 @@ function enviarForm(){
     capitalize = "não"
   }
   
-  const respostaNewsletter = encodeURI(capitalize[0].toUpperCase() + capitalize.substr(1));
+  const respostaNewsletter = encodeURI(capitalize[0].toUpperCase() + capitalize.slice(1).toLowerCase());
 
   var myURLCompleta = myURL+formName+respostaName+formEmail+respostaEmail+formTel+respostaTel+
-  formMessage+respostaMessage+formContact+respostaContact+formNewsletter+respostaNewsletter;
+  formMessage+respostaMessage+formContact+respostaContact+formHora+respostaHora+formNewsletter+respostaNewsletter;
 
   const url = new URL(myURLCompleta);
     document.getElementById('formularios').action = myURLCompleta;
