@@ -28,6 +28,8 @@ Para abrir e rodar o projeto, basta abrir o aquivo index.html no navegador.
 
 - ``HTML5``
 - ``CSS3``
+- ``javascript``
+  * javascript implementado após o término de outro curso.
 
 <h2>📚 Mais informações do curso</h2>
 
