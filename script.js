@@ -24,19 +24,17 @@ function enviarForm(){
   var respostaEmail = encodeURI(document.getElementById('email').value);
   var respostaTel = encodeURI(document.getElementById('telefone').value);
   var respostaMessage = encodeURI(document.getElementById('mensagem').value);
-  var capitalized = $('input[type=radio]:checked')[0].value
-  var capitalizeNewsletter = ""
+  var respostaContact = $('input[type=radio]:checked')[0].value
+  var capitalize = ""
 
   if( $('#newsletter').is(':checked') ){
-    capitalizeNewsletter = "sim"
+    capitalize = "sim"
     
   } else{
-    capitalizeNewsletter = "não"
+    capitalize = "não"
   }
   
-  const respostaNewsletter = encodeURI(capitalizeNewsletter[0].toUpperCase() + capitalizeNewsletter.substr(1));
-
-  const respostaContact = capitalized[0].toUpperCase() + capitalized.substr(1);
+  const respostaNewsletter = encodeURI(capitalize[0].toUpperCase() + capitalize.substr(1));
 
   var myURLCompleta = myURL+formName+respostaName+formEmail+respostaEmail+formTel+respostaTel+
   formMessage+respostaMessage+formContact+respostaContact+formNewsletter+respostaNewsletter;
