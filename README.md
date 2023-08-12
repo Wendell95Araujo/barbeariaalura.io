@@ -1,5 +1,5 @@
 <h1>
-  <a href="https://wendell95araujo.github.io/barbeariaalura.io/"><img src="logo.png" alt="logo da barbearia"/></a>
+  <a href="https://wendell95araujo.github.io/barbeariaalura.io/"><img src="img/logo.png" alt="logo da barbearia"/></a>
   <p>Barbearia Alura</p>
 </h1>
 
