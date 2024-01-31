@@ -3,6 +3,10 @@ const handlePhone = (event) => {
   input.value = phoneMask(input.value)
 }
 
+function loading() {
+  $('#newsletter').prop('checked', true)
+}
+
 const phoneMask = (value) => {
   if (!value) return ""
   value = value.replace(/\D/g,'')

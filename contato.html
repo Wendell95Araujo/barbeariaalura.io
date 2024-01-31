@@ -11,7 +11,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script type="text/javascript" src="script/script.js"></script>
 	</head>
-	<body>
+	<body onload="loading()">
 		<header>
 			<div class="caixa">
 				<h1><img src="img/logo.png" alt="Logo da Barbearia Alura"></h1>
@@ -28,34 +28,38 @@
 
 		<main>
 			<form class="formlularios" id="formularios" action= "javascript:enviarForm()" method="POST">
-				<label for="nomesobrenome">Nome e sobrenome</label>
+				<label class="input-label" for="nomesobrenome">Nome e sobrenome</label>
 				<input type="text" name="Nome" id="nomesobrenome" class="input-padrao" required>
 
-				<label for="email">Email</label>
+				<label class="input-label" for="email">Email</label>
 				<input type="email" name="e-mail" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
 
-				<label for="telefone">Telefone</label>
+				<label class="input-label" for="telefone">Telefone</label>
 				<input type="tel" maxlength="15" name="Telefone" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX" onkeyup="handlePhone(event)">
 
-				<label for="mensagem">Mensagem</label>
+				<label class="input-label" for="mensagem">Mensagem</label>
 				<textarea name="Mensagem" cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
 
 				<fieldset>
 					<legend>Como prefere o nosso contato?</legend>
-					<label for="radio-email"><input type="radio" name="contato" value="Email" id="radio-email">Email</label>
-					
-					<label for="radio-telefone"><input type="radio" name="contato" value="Telefone" id="radio-telefone">Telefone</label>
-					
-					<label for="radio-whatsapp"><input type="radio" name="contato" value="WhatsApp" id="radio-whatsapp" checked>WhatsApp</label>
+					<div class="checkbox-list">
+						<label class="checkbox-label" for="radio-email"><input type="radio" name="contato" value="Email" id="radio-email">Email</label>
+						
+						<label class="checkbox-label" for="radio-telefone"><input type="radio" name="contato" value="Telefone" id="radio-telefone">Telefone</label>
+						
+						<label class="checkbox-label" for="radio-whatsapp"><input type="radio" name="contato" value="WhatsApp" id="radio-whatsapp" checked>WhatsApp</label>
+					</div>
 				</fieldset>
 
 				<fieldset>
-					<legend>Qual horário prefere ser atendido?</legend>
-					<select class="hora-escolha" name="Hoário" id="horario">
-						<option>Manhã</option>
-						<option>Tarde</option>
-						<option>Noite</option>
-					</select>
+					<legend class="select-legend">Qual horário prefere ser atendido?</legend>
+					<div class="select-list">
+						<select class="hora-escolha" name="Hoário" id="horario">
+							<option>Manhã</option>
+							<option>Tarde</option>
+							<option>Noite</option>
+						</select>
+					</div>
 				</fieldset>
 
 				<label class="checkbox"><input type="checkbox" name="Newsletter" id="newsletter">Gostaria de receber nossas novidades por email?</label>
@@ -64,7 +68,7 @@
 			</form>
 
 			<table class="tabela-hora">
-				<tr>
+				<tr class="cabecalho-tabela-hora">
 					<td>Dia</td>
 					<td>Horário</td>
 				</tr>
